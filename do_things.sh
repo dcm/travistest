@@ -4,7 +4,7 @@ BLACK='black==19.10b0'
 echo "Running 'pip3 install $BLACK' under $(python --version)"
 pip3 install $BLACK
 
-BC='python3 -m black --check -l 79 --exclude vendor|node_modules .'
+BC='python3 -m black --check -l 79 --exclude "vendor|node_modules" .'
 echo "Running $BC"
 $BC
 
