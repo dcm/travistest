@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BLACK='black==19.10b0'
-CMD="/opt/pyenv/shims/pip3 install $BLACK"
+CMD="pip3 install $BLACK"
 echo "Running '$CMD' under $(python --version)"
 $CMD
 
