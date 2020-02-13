@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 BLACK='black==19.10b0'
-echo "Running 'pip3 install $BLACK' under $(python --version)"
-pip3 install $BLACK
+CMD="python3 -m pip install $BLACK"
+echo "Running '$CMD' under $(python --version)"
+$CMD
 
 BC='python3 -m black --check -l 79 --exclude "vendor|node_modules" .'
 echo "Running $BC"
