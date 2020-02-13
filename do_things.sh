@@ -5,7 +5,7 @@ CMD="pip3 install $BLACK"
 echo "Running '$CMD' under $(python --version)"
 $CMD
 
-BC='python3 -m black --check -l 79 --exclude "vendor|node_modules" .'
+BC='python3 -m black' # --check -l 79 --exclude "vendor|node_modules" .'
 echo "Running $BC"
 $BC
 
