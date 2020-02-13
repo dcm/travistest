@@ -3,5 +3,5 @@
 
 [tool.black]
 line-length = '79'
-exclude = vendor | node_module
+exclude = '(vendor | node_module)'
 
