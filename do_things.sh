@@ -14,4 +14,6 @@ for d in $PATH; do
     ls -Flash "$d" | sed -E 's/^/\t/' || true
 done
 
+echo "env under $(python --version)"
+env
 
