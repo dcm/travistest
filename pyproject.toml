@@ -2,6 +2,11 @@
 #requires = ["black==19.10b0"]
 
 [tool.black]
-line-length = '79'
-exclude = '(vendor | node_module)'
+line-length = 79
+exclude = '''
+(
+  vendor 
+  | node_module
+)
+'''
 
