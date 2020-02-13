@@ -9,8 +9,8 @@ which python3 || true
 echo "printing entire PATH"
 OIFS="$IFS"
 IFS=":"
-for d in $PATH: do
-    echo ">>> Contents of $d:"
+for d in $PATH; do
+    echo "Contents of $d:"
     ls -Flash "$d" | sed -E 's/^/\t/' || true
 done
 
